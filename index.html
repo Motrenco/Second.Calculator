@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Calculator</title>
+    <style>
+        body
+        {
+            background-color: black;
+        }
+        h1
+        {
+            text-align: center;
+            margin-left: 100px;
+            margin-right: 100px;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 200px;
+            background-color: gray;
+            border-radius: 12px;
+        }
+        footer
+        {
+            color:gray;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+    <h1>
+        <script>
+
+        var a = prompt("Enter number A: ");
+        var b = prompt("Enter operator ( either +, -, * or / ): ");
+        var c = prompt("Enter number B: ");
+       
+        if ( b == "*")
+        {
+            function multiply (a, c)
+        {
+            return parseInt(a) * parseInt(c);
+        }
+        var result = multiply (a, c);
+        document.write ("Result is: " + result);
+        }
+        else if ( b == "-")
+        {
+            function dif (a, c)
+        {
+            return parseInt(a) - parseInt(c);
+        }
+        var result = dif (a, c);
+        document.write ("Result is: " + result);
+        }
+        else if(b == "/")
+        {
+            function divide (a, c)
+        {
+            return parseInt(a) / parseInt(c);
+        }
+        var result = divide (a, c);
+        document.write ("Result is: " + result);
+        }
+        else if (b == "+")
+        {
+            function sum (a, c)
+        {
+            return parseInt(a) + parseInt(c);
+        }
+        var result = sum (a, c);
+        document.write ("Result is: " + result);
+        }
+        else
+        {
+            throw "This is Error"
+        }
+    </script>
+    </h1>
+    <footer>
+        ©Motrenco.Denis
+    </footer>
+</body>
+</html>
